@@ -9,7 +9,7 @@ local window = library:AddWindow("RezzyFrmDa5 Private Hub", {
 local Main = window:AddTab("MAIN")
 local folder = Main:AddFolder("BRAWL")
 
-local Stuff = window:AddTab("AUTO STUFF")
+local Stuff = window:AddTab("     AUTO STUFF")
 
 local godModeToggle = false
 folder:AddSwitch("God Mode (Brawl)", function(State)
@@ -87,7 +87,7 @@ end)
 
 Main:AddLabel("---Auto equip Here---")
 
-local folder = Stuff:AddFolder("Auto Farm Jungle")
+local folder = Stuff:AddFolder("     Auto Farm Jungle")
 
 local autoRepToggle = false
 folder:AddSwitch("Auto Lift", function(State)
@@ -157,7 +157,7 @@ folder:AddSwitch("Auto Jungle Squat", function(State)
     end
 end)
 
-local folder2 = Stuff:AddFolder("Auto Farm Muscle King")
+local folder2 = Stuff:AddFolder("     Auto Farm Muscle King")
 
 local MuscleKingSquatToggle = false
 folder2:AddSwitch("Auto Muscle Boulder", function(State)
@@ -212,7 +212,7 @@ folder2:AddSwitch("Auto Muscle Dead Lift", function(State)
     end
 end)
 
-local folder3 = Stuff:AddFolder("Auto Farm Lygends Gym")
+local folder3 = Stuff:AddFolder("     Auto Farm Lygends Gym")
 
 local MuscleKingSquatToggle = false
 folder3:AddSwitch("Auto Legends Boulder", function(State)
@@ -267,7 +267,7 @@ folder3:AddSwitch("Auto Legends Dead Lift", function(State)
     end
 end)
 
-local folder4 = Stuff:AddFolder("Auto Farm Eternal Gym")
+local folder4 = Stuff:AddFolder("     Auto Farm Eternal Gym")
 
 folder4:AddSwitch("Auto Eternal Bench", function(State)
     MuscleKingSquatToggle = State
@@ -282,7 +282,7 @@ folder4:AddSwitch("Auto Eternal Bench", function(State)
     end
 end)
 
-local folder5 = Stuff:AddFolder("Auto Farm Froze Gym")
+local folder5 = Stuff:AddFolder("     Auto Farm Froze Gym")
 
 folder5:AddSwitch("Auto Froze Bench Lift", function(State)
     MuscleKingSquatToggle = State
@@ -323,7 +323,7 @@ folder5:AddSwitch("Auto Squat Lift", function(State)
     end
 end)
 
-local folder6 = Stuff:AddFolder("Auto Farm Mythical Gym")
+local folder6 = Stuff:AddFolder("     Auto Farm Mythical Gym")
 
 folder6:AddSwitch("Auto Bench Lift", function(State)
     MuscleKingSquatToggle = State
@@ -364,7 +364,7 @@ folder6:AddSwitch("Auto Mythical Pull up", function(State)
     end
 end)
 
-local AutoEquip = Main:AddFolder("Auto Equip")
+local AutoEquip = Main:AddFolder("     Auto Equip")
 
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
@@ -523,7 +523,7 @@ player.CharacterAdded:Connect(function()
     end
 end)
 
-local Rebirth = Main:AddFolder("Auto Rebirths")
+local Rebirth = Main:AddFolder("     Auto Rebirths")
 
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
