@@ -7,9 +7,9 @@ local window = library:AddWindow("RezzyFrmDa5 Private Hub", {
 })
 
 local Main = window:AddTab("MAIN")
-local folder = Main:AddFolder("BRAWL")
+local folder = Main:AddFolder("     BRAWL")
 
-local Stuff = window:AddTab("     AUTO STUFF")
+local Stuff = window:AddTab("AUTO STUFF")
 
 local godModeToggle = false
 folder:AddSwitch("God Mode (Brawl)", function(State)
@@ -37,7 +37,7 @@ folder:AddSwitch("Auto Join Brawl", function(State)
     end
 end)
 
-local folder2 = Main:AddFolder("Misc")
+local folder2 = Main:AddFolder("     Misc")
 
 folder2:AddButton("Destroy Ad Teleport", function()
     local part = workspace:FindFirstChild("RobloxForwardPortals")
