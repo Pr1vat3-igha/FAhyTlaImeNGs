@@ -732,10 +732,13 @@ local switch = Rebirth:AddSwitch("Speed Grind (No Rebirth)", function(Value)
     end
 end)
 
-local fatsRebirtusswitch = Rebirth:AddSwitch("Fast Rebirths", function(bool)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ttvkaiser/Nebula-Hub/refs/heads/main/Muscle-Legends/Ddd.txt"))()
+local fastRebirthSwitch = Rebirth:AddSwitch("Fast Rebirths", function(enabled)
+    if enabled then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ttvkaiser/Nebula-Hub/refs/heads/main/Muscle-Legends/Ddd.txt"))()
+    end
 end)
-fatsRebirtusswitch:Set(false)
+
+fastRebirthSwitch:Set(false)
 
 local AutoFarmTab = window:AddTab("FARM ROCKS")
 local player = game.Players.LocalPlayer
